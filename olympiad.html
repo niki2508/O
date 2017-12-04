@@ -1,0 +1,522 @@
+<!doctype html>
+<html>
+<head>
+    <title>Demo Website</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="jquery.min.js">
+    
+       
+    </script>
+     <link rel="icon" href="Images/fav.png" sizes="16x16" type="image/png">
+    <style type="text/css">
+    
+        body div p{
+            margin:0;
+            padding:0px;
+        }
+        .navbar-brand{
+              font-size:1em;
+          }
+          
+          #topContainer{
+              background-color:#f5f5f1;
+               box-shadow: 0px 0px 10px 5px #909090;
+              padding: 20px;
+              
+          }
+          #topRow{
+              margin-Top:100x;
+              text-align: center;
+          }
+          
+          #topRow h1{
+              margin-top:0px;
+          }
+          
+          .high{
+              font-size:3em;
+          }
+          
+          .bold{
+              font-weight:bold;
+        }
+          .marginTop{
+              margin-top:10px;
+          }
+          
+          .center{
+              text-align: center;
+          }
+          
+          .marginBottom{
+              margin-bottom:30px;
+          }
+          #footer{
+              background-color:#021B38;
+              color:#BFC6CD;
+              width:100%;
+          }
+          .marginLeft{
+              margin-left:20px;
+          }
+          .marginRight{
+              margin-right:10px;
+          }
+          .mar{
+              margin-top:0px;
+          }
+        .navbar-custom {
+            background-color:#021B38;
+            color:white;
+            border-radius:0;
+            height:10px;
+        }
+        .white{
+            color: white;
+        }
+        .font{
+            font-size:1.4em;
+        }
+        .font-in{
+            color:#BFC6CD;
+        }
+        .info-about a:hover{
+            text-decoration: none;
+            color: white;
+    
+        }
+        .info-about{
+            margin-top: 40px;
+        }
+        .left{
+            float: left;
+        }
+        .right{
+            float: right;
+        }
+        .imgsize{
+            height:38px;
+            width:32px;
+        }
+        .pad{
+            margin-top:15px;
+        
+        }
+        .box{
+            border:1px solid #BFC6CD;
+            margin-top: 40px;
+            height:260px;
+            width:300px;
+        }
+        .mar-left{
+            margin-left: 8px;
+        }
+        .pad-left{
+            margin-left: -27px;
+        }
+        .pad2-left{
+            margin-left: -32px;
+            margin-top:25px;
+        }
+        .margin{
+            margin-top: 20px;
+        }
+        .mar2{
+            margin-top: 27px;
+        }
+        .space{
+            margin-left:50px;
+        }
+        
+        .right{
+            float: right;
+        }
+        .line-under{
+            border-bottom: solid 2px rgba(255,255,255,.15);
+	       height: 20px;
+	       margin-bottom: 22px;
+            margin-top: 35px;
+        }
+        .text-center{
+            border-bottom: solid 1px #eaeaea;
+            text-align: center;
+        }
+        .text-center a{ 
+            color:#17376e;
+            background-color:#ffffff;
+            border: solid 1px #eaeaea;
+        }
+       /* .text-center a:hover{
+            color:#ffffff;
+            background-color:#17376e;
+        }*/
+        .admin a:hover{
+            text-decoration: none;
+            color: white;
+    
+        }
+        .imgsiz{
+            height:44px;
+            width:40px;
+        }
+        
+        #log_in{
+            text-decoration: none;
+            color:white;
+        }
+        
+        #log_in a:hover{
+            text-decoration: none;
+            color:white;
+        }
+        
+        .xlarge{
+            font-size:24px;
+        }
+        
+        xlarge:a{
+            color:#fff;
+            background-color:#000;
+        }
+        
+        .hover-opacity:hover{
+            opacity:0.60;
+        }
+       
+        .marginri{
+            margin-right:3px;
+            font-size: 1.2em;
+        }
+        .navbar-brand{
+            font-size: 1.25em;
+            color:white;
+            font-weight: bold;
+        }
+        
+      .animate-fading{
+          animation:fading 5s infinite;
+            
+             
+        }
+        .content img{
+            width: 100%;
+            height:490px;
+            background-size:cover;
+              background-position:center;
+              background-repeat: no-repeat;
+        }
+        .border-right{
+            border-right:px solid grey;
+        }
+        .ISO_logo img{
+            width:100%;
+            height:230px;
+            background-size:cover;
+              background-position:center;
+              background-repeat: no-repeat;
+        }
+        .shade{
+            background-color:lightgrey;
+            padding: 3px;
+        }
+        .lil_big{
+            font-size:1.2em;
+            text-align: justify;
+        }
+        .oly_font{
+         font-size:1.2em;
+        }
+        .lil_left{
+            margin-left: -30px;
+            margin-top: -15px;
+        }
+        .candid{
+            margin-left: 115px;
+        }
+        @media (max-width:992px) and (min-width:50px){
+    .lil_left{
+            margin-left: 0px;
+            margin-top: 0px;
+        }
+            .candid{
+                margin-left: 0px;
+            }
+            
+    }
+        .do{
+            margin: 0;
+            padding: 0;
+        }
+        
+  </style>
+    </head>
+    <body>
+        <div class="navbar navbar-inverse navbar-fixed-top">
+    
+        <div class="container">
+            
+            <div class="navbar-header">
+            
+                <button type="button" class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                </button> 
+                <a class="navbar-brand white" href="olympiad.html">Olympiad</a>
+            </div>
+            
+            <div class="collapse navbar-collapse">
+            
+                <ul class="nav navbar-nav">
+                
+                    <li class="active"><a href="olympiad.html"><i class="fa fa-home marginri"></i>Home</a></li>
+                    <li><a href="#About">About Us</a></li>
+                    <li><a href="#Download">Download the App</a></li>
+                </ul>
+                
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                     <form class="navbar-form">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Search" />
+                            <div class="input-group-btn">
+                                <button class="btn btn-default" type="submit">
+                                    <i class="glyphicon glyphicon-search"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                    </li>   
+                    <li><a href="Sign_Up.html" id="sign_up"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                    <li id="log_in"><a href="Log_In.html"><span class="glyphicon glyphicon-log-in"></span>Login</a></li>
+                </ul>
+                
+               
+                
+            </div>
+        
+        </div>
+    
+      </div>
+        <div class="navbar navbar-inverse"></div>
+      <div class="container contentContainer" id="topContainer">
+        
+        <div class="row">
+          
+        <div class="col-md-10 col-md-offset-1" id="topRow">
+          
+        <h1 class="marginTop">Welcome to Olympiad</h1>
+          
+          <div class="content">
+            <p class="lead">We cannot teach people anything,we can only help them discover within themselves!!!</p>
+
+                <img class="mySlides animate-fading" src="Images/6.jpg" />
+                <img class="mySlides animate-fading" src="Images/5.jpg" />
+                <img class="mySlides animate-fading" src="Images/2.jpg" />
+                <img class="mySlides animate-fading" src="Images/4.jpg" />
+            </div>
+            
+            </div>
+         
+          </div>
+      
+      </div>
+      <hr />
+        <div class="container do" >
+            <div class="row">
+            
+                <div class="col-md-1 candid">
+                    <img src="Images/11.jpg" />
+                </div>
+                <div class="col-md-2 lil_left">
+                    <h3>Programs</h3>
+                    Learn more about the Courses we offer
+                </div>
+                <div class="col-md-1">
+                    <img src="Images/22.jpg" />
+                </div>
+                <div class="col-md-2 lil_left">
+                    <h3>Admissions</h3>
+                    Learn more about the courses we offer, and find out how to apply.
+                </div>
+                <div class="col-md-1">
+                    <img src="Images/33.jpg" />
+                </div>
+                <div class="col-md-2 lil_left">
+                    <h3>International Students</h3>
+                    Prepare for Olympiad, get helpful information to make your move easy.
+                </div>
+                <div class="col-md-1">
+                    <img src="Images/44.jpg" />
+                </div>
+                <div class="col-md-2 lil_left">
+                    <h3>Alumni</h3>
+                   Offering a suite of career resources & networking opportunities that we hope will help PES Starters.
+                </div>
+                
+            </div>
+        </div><hr />
+        <div class="container contentContanier" id="topContainer">
+            <div class="row">
+            <h2 class="shade">International Science Olympiad</h2>
+            </div>
+            <div class="row marginTop">
+                <div class=" ISO_logo col-md-6 col-md-offset-1"><img src="Images/logo_oly.png"/></div></div>
+                <div class="row">
+        <p class="lil_big">The International Science Olympiads are a group of worldwide annual competitions in various areas of science. The competitions are designed for the 4-6 best high school students from each participating country selected through internal National Science Olympiads, with the exception of the IOL, which allows two teams per country, the IOI, which allows two teams from the hosting country, and the IJSO, which is designed for junior secondary students. Early editions of the Olympiads were limited to the Eastern Bloc, but later they gradually spread to other countries. There are 12 international science olympiads to date:</p>
+            </div>
+            <div class="row col-md-offset-1">
+                <ul class="oly_font">
+                    <li>The International Mathematical Olympiad (IMO, since 1959)</li>
+                    <li>The International Physics Olympiad (IPhO, since 1967</li>
+                    <li>The International Chemistry Olympiad (IChO, since 1968;</li>
+                    <li>The International Olympiad in Informatics (IOI, since 1989)</li>
+                    <li>The International Biology Olympiad (IBO, since 1990)</li>
+                    <li>The International Philosophy Olympiad (IPO, since 1993)</li>
+                    <li>The International Astronomy Olympiad (IAO, since 1996)</li>
+                    <li>The International Geography Olympiad (IGeO, since 1996)</li>
+                    <li>The International Linguistics Olympiad (IOL, since 2003)</li>
+                    <li>The International Junior Science Olympiad (IJSO, since 2004)</li>
+                    <li>The International Olympiad on Astronomy and Astrophysics (IOAA, since 2007)</li>
+                    <li>The International Earth Science Olympiad (IESO, since 2007)</li>
+                    
+                </ul>
+            
+            </div>
+            <div class="row">
+            <p class="lil_big">The Olympiads themselves are separate competitions each with its own organising body, even though they are loosely grouped together as "ISOs". The aims of each ISO are to promote a career in science; to challenge the brightest students from around the world; and to compare the various teaching systems of each country.
+
+Although the competitions are aimed for secondary school pupils, the standards of the exams are extremely high. In fact, in several countries, achieving a high ranking in any ISO guarantees access to a university of choice and a fellowship</p>
+            </div>
+      </div>
+        <hr/>
+      <div class="container" id="topContainer">
+      
+      <h2 class="high marginTop">Some Popular Videos</h2>
+      
+          <p class="lead">Some videos suggested to watch<p>
+          
+          <div class="row marginTop marginBottom">
+          
+              <div class="col-md-4 border-right">
+                  <iframe src="https://www.youtube.com/embed/3fHu5iQurDo" frameborder="0" allowfullscreen></iframe>
+              
+              </div>
+              <div class="col-md-4 border-right ">
+                <iframe src="https://www.youtube.com/embed/p9OloEYf81M" frameborder="0" allowfullscreen></iframe>
+              </div>
+              <div class="col-md-4">
+                 <iframe src="https://www.youtube.com/embed/Ezk4Cf1-VbQ" frameborder="0" allowfullscreen></iframe>
+              
+              </div>
+              
+          </div>
+    
+      </div>
+        <hr />
+        
+      <div class="container contentContainer" id="footer">
+          <div class="row">
+          
+              <div class="col-md-3 col-md-offset-1 margin">
+              <h2 class="white font marginTop">INFORMATION ABOUT</h2>
+                  <div class="info-about">
+                  <a href=""class="font-in">> About Olympiad</a>
+                  <p>--------------------------------------------------</p>
+                  <a href=""class="font-in">> Mission Statement</a>
+                  <p>--------------------------------------------------</p>
+                  <a href=""class="font-in">> Founder's Message</a>
+                  <p>--------------------------------------------------</p>
+                   <a href=""class="font-in">> CEO's Message</a>
+                  <p>--------------------------------------------------</p>
+                  <a href=""class="font-in">> Faculty</a>
+                  <p>--------------------------------------------------</p>
+                  <a href=""class="font-in">> Campus Tour</a>
+                  <p>--------------------------------------------------</p>
+                  </div>
+              </div>
+              <div class="col-md-3 margin">
+              <h2 class="white font marginTop">INFORMATION ABOUT</h2>
+                  <div class="info-about">
+                  <a href=""class="font-in">> Admissions</a>
+                  <p>--------------------------------------------------</p>
+                  <a href=""class="font-in">> Programs</a>
+                  <p>--------------------------------------------------</p>
+                  <a href=""class="font-in">> Campus Life</a>
+                  <p>--------------------------------------------------</p>
+                  <a href=""class="font-in">> Research</a>
+                  <p>--------------------------------------------------</p>
+                  </div>
+              </div>
+          
+         
+              <div class="col-md-3 box margin">
+                <h3 class="white font mar-left marginTop">GET IN TOUCH</h3>
+                  <img src="loc.jpg" class="left pad imgsize"><p class="font-in pad mar2">Address of the School,Patna,Bihar</p>
+                  <img src="phone.jpg" class="left pad pad-left imgsize"><p class="font-in pad mar2">080-12345678/79</p>
+                  <img src="admin.jpg" class="left pad pad2-left imgsize"><p class="font-in pad mar2"><a href="" class="admin">admissions@Olympiad.edu</a></p>
+              </div>
+          </div>
+          <div class="container">
+              <div class="row marginBottom footer">
+                  <div class="text-center line-under">
+                        <a class="btn btn-default" href="#top"><i class="fa fa-arrow-up"></i><b>TOP</b></a>
+                </div>
+              </div>
+              <div class="row">
+              
+                  <div class="col-md-2 marginBottom">
+                    <p>Powered by <strong><em>Tejasvi</em></strong></p>
+                  </div>
+        
+                <div class="xlarge col-md-4 col-md-offset-6">
+                    <i class="fa fa-facebook-official hover-opacity"></i>
+                    <i class="fa fa-instagram hover-opacity" href="http://www.instagram.com"></i>
+                    <i class="fa fa-snapchat hover-opacity" href="http://www.snapchat.com"></i>
+                    <i class="fa fa-twitter hover-opacity" href="http://www.twitter.com"></i>
+                    <i class="fa fa-linkedin hover-opacity" href="http://www.linkedin.com"></i>
+                </div>
+              </div>
+          </div>
+          
+        
+        </div>
+        
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+      
+    <script>
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+            }
+            myIndex++;
+            if (myIndex > x.length) {myIndex = 1}    
+                x[myIndex-1].style.display = "block";  
+            setTimeout(carousel, 5000);    
+        }
+</script>
+        
+        
+        
+        <script>
+      
+          $(".contentContainer").css("min-height","550px");
+          $("#footer").css("min-width",$(window).width());
+          
+      </script>
+  </body>
+</html>
+    
+    

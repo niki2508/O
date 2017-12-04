@@ -1,0 +1,440 @@
+<!doctype html>
+<html>
+<head>
+    <title>Demo Website | Sign Up</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <script type="text/javascript" src="jquery.min.js">
+    
+       
+    </script>
+    <link rel="icon" href="Images/fav.png" sizes="16x16" type="image/png">
+    <style type="text/css">
+    
+        body div p{
+            margin:0;
+            padding:0;
+        }
+        .navbar-brand{
+              font-size:1em;
+          }
+          
+          #topContainer{
+              background-color:#f5f5f1;
+               box-shadow: 0px 0px 10px 5px #909090;
+              padding: 20px;
+              margin-bottom: 30px;
+          }
+          #topRow{
+              margin-Top:100x;
+              text-align: center;
+          }
+          
+          #topRow h1{
+              margin-top:150px;
+          }
+          
+          .high{
+              font-size:3em;
+          }
+          
+          .bold{
+              font-weight:bold;
+        }
+          .marginTop{
+              margin-top:30px;
+          }
+          
+          .center{
+              text-align: center;
+          }
+          
+          .marginBottom{
+              margin-bottom:30px;
+          }
+          #footer{
+              background-color:#021B38;
+              color:#BFC6CD;
+              width:100%;
+          }
+          .marginLeft{
+              margin-left:20px;
+          }
+          .marginRight{
+              margin-right:10px;
+          }
+          .mar{
+              margin-top:0px;
+          }
+        .navbar-custom {
+            background-color:#021B38;
+            color:white;
+            border-radius:0;
+            height:10px;
+        }
+        .white{
+            color: white;
+        }
+        .font{
+            font-size:1.4em;
+        }
+        .font-in{
+            color:#BFC6CD;
+        }
+        .info-about a:hover{
+            text-decoration: none;
+            color: white;
+    
+        }
+        .info-about{
+            margin-top: 40px;
+        }
+        .left{
+            float: left;
+        }
+        .imgsize{
+            height:38px;
+            width:32px;
+        }
+        .pad{
+            margin-top:15px;
+        
+        }
+        .box{
+            border:1px solid #BFC6CD;
+            margin-top: 40px;
+            height:260px;
+            width:300px;
+        }
+        .mar-left{
+            margin-left: 8px;
+        }
+        .pad-left{
+            margin-left: -27px;
+        }
+        .pad2-left{
+            margin-left: -32px;
+            margin-top:25px;
+        }
+        .margin{
+            margin-top: 20px;
+        }
+        .mar2{
+            margin-top: 27px;
+        }
+        .space{
+            margin-left:50px;
+        }
+        .line-under{
+            border-bottom: solid 2px rgba(255,255,255,.15);
+	       height: 20px;
+	       margin-bottom: 22px;
+            margin-top: 35px;
+        }
+        .text-center{
+            border-bottom: solid 1px #eaeaea;
+            text-align: center;
+        }
+        .text-center a{ 
+            color:#17376e;
+            background-color:#ffffff;
+            border: solid 1px #eaeaea;
+        }
+       /* .text-center a:hover{
+            color:#ffffff;
+            background-color:#17376e;
+        }*/
+        .admin a:hover{
+            text-decoration: none;
+            color: white;
+    
+        }
+        .imgsiz{
+            height:44px;
+            width:40px;
+        }
+        
+        #log_in{
+            text-decoration: none;
+            color:white;
+        }
+        
+        #log_in a:hover{
+            text-decoration: none;
+            color: white;
+        }
+        
+        /////
+        
+        #error{
+             margin:70px auto 0 auto;
+             width:550px;
+            font-size:1.3em;
+            font-family:helvetica;
+        }
+        
+        #wrapper{
+            margin:0 auto;
+            width:550px;
+            font-size:1.3em;
+            font-family:helvetica;
+            border:1px dashed grey;
+            border-radius: 9px;
+             background-color:#FAFAFA;
+        }
+        .input_form{
+            border-radius:5px;
+            width:300px;
+            height:36px;
+            padding:5px;
+            border:1px solid black;
+            font-size:1.3em;
+            margin-bottom:12px; 
+            position: relative;
+            top:10px;
+            background-color: none;
+        }
+        label{
+            width:200px;
+            float:left;
+            padding-top:15px; 
+            padding-left: 20px;
+            font-weight: bold;
+            
+        }
+        #submit{
+            width:97px;
+            height:38px;
+            margin-left:200px;
+            margin-top: px;
+            margin-bottom: 25px;
+            font-size:1em;
+            background-color:lightslategrey;
+            color: black;
+        }
+        
+        h1{
+            margin-left:40px;
+        }
+        #submit:hover{
+            opacity:0.8;
+            background-color:lightgrey;
+            color:black;
+        }
+        
+        #forgot_pass{
+            font-size: 0.8em;
+            margin-left: 200px;
+            margin-top: 30px;
+            color: dodgerblue;
+        }
+        #create_account{
+            font-size: 1.05em;
+            position: relative;
+            left:450px;
+            top: 10px;
+            color: dodgerblue;
+        }
+        .xlarge{
+            font-size:24px;
+        }
+        
+        xlarge:a{
+            color:#fff;
+            background-color:#000;
+        }
+        
+        .w3-hover-opacity:hover{
+            opacity:0.60;
+        }
+       
+        .marginri{
+            margin-right:3px;
+            font-size: 1.2em;
+        }
+        .navbar-brand{
+            font-size: 1.25em;
+            color:white;
+            font-weight: bold;
+        }
+        .marginri{
+            margin-right:3px;
+            font-size: 1.2em;
+            
+        }
+        .navbar-brand{
+            font-size: 1.25em;
+            color:white;
+            font-weight: bold;
+        }
+    </style>
+    </head>
+    <body>
+        <div class="navbar navbar-inverse navbar-fixed-top">
+    
+        <div class="container">
+            
+            <div class="navbar-header">
+            
+                <button type="button" class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                </button> 
+                <a class="navbar-brand white" href="olympiad.html">Olympiad</a>
+            </div>
+            
+            <div class="collapse navbar-collapse">
+            
+                <ul class="nav navbar-nav">
+                
+                    <li class="active"><a href="olympiad.html"><i class="fa fa-home marginri"></i>Home</a></li>
+                    <li><a href="#About">About Us</a></li>
+                    <li><a href="#Download">Download the App</a></li>
+                </ul>
+                 <ul class="nav navbar-nav navbar-right">
+                    <li>
+                     <form class="navbar-form">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Search" />
+                            <div class="input-group-btn">
+                                <button class="btn btn-default" type="submit">
+                                    <i class="glyphicon glyphicon-search"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                    </li> 
+                     <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                    <li id="log_in"><a href="Log_In.html"><span class="glyphicon glyphicon-log-in"></span>Login</a></li>
+                </ul>
+            </div>
+        
+        </div>
+    
+    </div>
+        <div class="navbar navbar-inverse"></div>
+        <div class="container content" id="topContainer">
+      
+      <h2 class="bold center high">Olympiad Presents</h2>
+      
+          <p class="lead center">Sign in with your mail Id</p>
+          
+          <div class="row col-md-4 col-md-offset-3 marginTop marginBottom">
+          
+              <div id="error"></div>
+        <div id="wrapper"> 
+            
+            <form id="validationForm">
+                <h1>Student Login Form</h1>
+                
+                <label for="name">Name</label>
+                <input name="name" id="name" class="input_form" />
+                
+                 <label for="phone">Phone no</label>
+                <input name="phone" id="phone" class="input_form"/>
+                
+                <label for="email">Email</label>
+                <input name="email" id="email" class="input_form"/>
+            
+                <label for="pass">Password</label>
+                <input name="pass" type="password" id="pass1" class="input_form"/>
+            
+                <label for="pass">Confirm Password</label>
+                <input name="pass" type="password" id="pass2" class="input_form"/>
+                
+                 <a href="" id="forgot_pass">Forgot password?</a>
+                
+                 
+                
+                <input type="submit" value="Submit" id="submit" class="input_form"/>
+               
+            </form>
+              </div>
+            <a href="" id="create_account">Sign up here</a>
+              
+            </div>
+    
+      </div>
+        
+        <div class="container contentContainer" id="footer">
+          <div class="row">
+          
+              <div class="col-md-3 col-md-offset-1 margin">
+              <h2 class="white font marginTop">INFORMATION ABOUT</h2>
+                  <div class="info-about">
+                  <a href=""class="font-in">> About Olympiad</a>
+                  <p>--------------------------------------------------</p>
+                  <a href=""class="font-in">> Mission Statement</a>
+                  <p>--------------------------------------------------</p>
+                  <a href=""class="font-in">> Founder's Message</a>
+                  <p>--------------------------------------------------</p>
+                   <a href=""class="font-in">> CEO's Message</a>
+                  <p>--------------------------------------------------</p>
+                  <a href=""class="font-in">> Faculty</a>
+                  <p>--------------------------------------------------</p>
+                  <a href=""class="font-in">> Campus Tour</a>
+                  <p>--------------------------------------------------</p>
+                  </div>
+              </div>
+              <div class="col-md-3 margin">
+              <h2 class="white font marginTop">INFORMATION ABOUT</h2>
+                  <div class="info-about">
+                  <a href=""class="font-in">> Admissions</a>
+                  <p>--------------------------------------------------</p>
+                  <a href=""class="font-in">> Programs</a>
+                  <p>--------------------------------------------------</p>
+                  <a href=""class="font-in">> Campus Life</a>
+                  <p>--------------------------------------------------</p>
+                  <a href=""class="font-in">> Research</a>
+                  <p>--------------------------------------------------</p>
+                  </div>
+              </div>
+              <div class="col-md-3 box margin">
+                <h3 class="white font mar-left marginTop">GET IN TOUCH</h3>
+                  <img src="loc.jpg" class="left pad imgsize"><p class="font-in pad mar2">Address of the School,Patna,Bihar</p>
+                  <img src="phone.jpg" class="left pad pad-left imgsize"><p class="font-in pad mar2">080-12345678/79</p>
+                  <img src="admin.jpg" class="left pad pad2-left imgsize"><p class="font-in pad mar2"><a href="" class="admin">admissions@Olympiad.edu</a></p>
+              </div>
+          </div>
+          <div class="container">
+              <div class="row marginBottom footer">
+                  <div class="text-center line-under">
+                        <a class="btn btn-default" href="#top"><i class="fa fa-arrow-up"></i><b>TOP</b></a>
+                </div>
+              </div>
+              <div class="row">
+              
+                  <div class="col-md-2 marginBottom">
+                    <p>Powered by <strong><em>Tejasvi</em></strong></p>
+                  </div>
+        
+                <div class="xlarge col-md-4 col-md-offset-6">
+                    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+                    <i class="fa fa-instagram w3-hover-opacity" href="http://www.instagram.com"></i>
+                    <i class="fa fa-snapchat w3-hover-opacity" href="http://www.snapchat.com"></i>
+                    <i class="fa fa-twitter w3-hover-opacity" href="http://www.twitter.com"></i>
+                    <i class="fa fa-linkedin w3-hover-opacity" href="http://www.linkedin.com"></i>
+                </div>
+              </div>
+          </div>
+          
+        
+        </div>
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+      <script>
+      
+          $(".content").css("min-height",$(window).height());
+          $(".contentContainer").css("min-height","550px");
+          $("#footer").css("min-width",$(window).width());
+          $(".container").css("min-width",$(window).height());
+      </script>
+    </body>
+</html>
